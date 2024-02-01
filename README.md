@@ -1,2 +1,9 @@
-# temp
-CSC-340 Project
+## \[Title\]
+
+## Team Members
+
+> Carlos Villarreal, Michael DeHaan, Salvador Macias
+
+## Nickname
+
+## Description
