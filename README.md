@@ -2,12 +2,14 @@
 
 ## Team Members
 
->Carlos Villarreal, Michael DeHaan, Salvador Macias
+> Carlos Villarreal, Michael DeHaan, Salvador Macias
 
 ## Nickname
->NutriLog
+
+> NutriLog
 
 ## Description
+
 <blockquote>
 Nutrilog: Smart Nutrition is a smart food-tracking app. It lets users see details about the foods and recipes they consume, emphasizing nutritional education and guidance. 
 Nutrilog is a Web App that can be accessed with any modern web browser. The main objective of this app is to inform users of the nutritional value of the foods they eat, 
@@ -17,6 +19,6 @@ Users can search for and log food items and recipes using custom filters and fla
 an Admin has full access to the system and can perform operations on User and Specialist metadata to gain insights based on the app's analytics.
 </blockquote>
 
-</br>
+## Documents
 
-![Use Case Diagram](./user-case.jpeg)
+> [Software Requirements Specification](./docs/SoftwareRequirementsDocument.pdf)
