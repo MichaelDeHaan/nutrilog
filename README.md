@@ -21,4 +21,4 @@ an Admin has full access to the system and can perform operations on User and Sp
 
 ## Documents
 
-> [Software Requirements Specification](docs/software-requirements.pdf)
+> [Software Requirements Specification](software requirements V1/software-requirements.pdf)
