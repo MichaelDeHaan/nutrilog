@@ -1,0 +1,42 @@
+* {
+    /* outline: solid black 1px; */
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
+#navbar {
+    padding: 10px 10px;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(78, 255, 78);
+    box-shadow: 0 5px 5px -5px gray;
+}
+
+#icon {
+    height: 1.5em;
+    margin-right: 0.25em;
+}
+
+#login-button {
+    justify-content: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 15px;
+    box-shadow: 0;
+    border: 0;
+    background-color: rgb(1, 136, 1);
+    width: 10%;
+    border-radius: 2.5px;
+}
