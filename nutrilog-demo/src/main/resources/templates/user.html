@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Page - NutriLog</title>
+    <link rel="stylesheet" href="../static/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        #user-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        #user-container h2 {
+            margin-bottom: 20px;
+        }
+
+        #user-info {
+            margin-bottom: 20px;
+        }
+
+        #user-info p {
+            margin: 10px 0;
+        }
+
+        #logout-button {
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #logout-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <a class="nav-item" href="./index.html">
+            <img id="icon" src="../static/icon.png" alt="Fork, knife, and plate icon">
+            <span>NutriLog</span>
+        </a>
+    </nav>
+    <main id="user-container">
+        <h2>Welcome to Your NutriLog User Page</h2>
+        <section id="user-info">
+            <p><strong>Name:</strong> John Doe</p>
+            <p><strong>Email:</strong> john@example.com</p>
+            <!-- You can add more user information here -->
+        </section>
+        <a href="./login.html"  id="logout-button" onclick="logout()">Logout</a>
+    </main>
+
+
+</body>
+
+</html>
