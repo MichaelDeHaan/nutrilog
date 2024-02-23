@@ -39,5 +39,31 @@ a {
     background-color: rgb(1, 136, 1);
     width: 10%;
     border-radius: 2.5px;
-    
+}
+
+.why-nutrilog {
+    font-size: x-large;
+}
+
+.big-sign-up-button{
+    display: flex;
+    align-items: center;
+    font-size: xx-large;
+    justify-content: center;
+    height: 100px;
+    border: 3px solid green; 
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -10%);
+}
+
+#sign-up-button{
+    justify-content: center;
+    color: white;
+    background-color: green;
+    border: 0;
+    width: 50%;
+    text-align: center;
 }
