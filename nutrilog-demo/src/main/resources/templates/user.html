@@ -53,6 +53,31 @@
         #logout-button:hover {
             background-color: #0056b3;
         }
+
+        .sidenav {
+            height: 100%;
+            width: 160px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(63, 206, 63);
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        .sidenav a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: white;
+            display: block;
+        }
+
+        .sidenav a:hover{
+            background-color: green;
+            color: white;
+        }
     </style>
 </head>
 
@@ -72,6 +97,15 @@
         </section>
         <a href="./login.html"  id="logout-button" onclick="logout()">Logout</a>
     </main>
+
+    <a id="sign-up-button" class="big-sign-up-button" href="signup.html">Search Food Database</a>
+
+    <sidebar class="sidenav">
+        <a href="placeholder">Request Specialist Assistance</a>
+        <a href="placeholder">Manage Personal Settings</a>
+        <a href="placeholder">Saved Foods</a>
+        <a href="placeholder">Saved Recipes</a>
+    </sidebar>
 
 
 </body>
