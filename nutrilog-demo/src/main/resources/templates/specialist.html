@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Specialist Page - NutriLog</title>
     <link rel="stylesheet" href="../static/index.css">
+    <link rel="stylesheet" href="../static/sidebar_style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -19,15 +20,9 @@
         }
 
         #specialist-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            padding: 20px;
-        }
-
-        #user-info {
-            flex-grow: 1;
-            max-width: 600px;
+            width: 100%;
+            max-width: 800px;
+            margin: 100px auto;
             padding: 20px;
             background-color: #fff;
             border-radius: 8px;
@@ -35,11 +30,15 @@
             text-align: center;
         }
 
-        #user-info h2 {
+        #user-container h2 {
             margin-bottom: 20px;
         }
 
-        #user-info p {
+        #specialist-info {
+            margin-bottom: 20px;
+        }
+
+        #specialist-info p {
             margin: 10px 0;
         }
 
@@ -68,19 +67,24 @@
         </a>
     </nav>
     <main id="specialist-container">
-        <div id="user-info">
+        <div id="specialist-info">
             <h2>Welcome to Your NutriLog Specialist Page</h2>
-            <div id="user-info">
+            <div id="specialist-info">
                 <p><strong>Name:</strong> John Doe</p>
                 <p><strong>Email:</strong> johndoe@example.com</p>
             </div>
             <a href="login.html"  id="logout-button" onclick="logout()">Logout</a>
         </div>
-        <nav id="nav-bar">
-            <a class="nav-item" href="#">Create User Nutrition Plan</a>
-            <a class="nav-item" href="#">Manage Personal Settings</a>
-        </nav>
     </main>
+
+    <a id="sign-up-button" class="big-sign-up-button" href="signup.html">Search Food Database</a>
+
+    <sidebar class="sidenav" id="sidebar-wrapper">
+        <a href="placeholder">Create User Nutrition Plans</a>
+        <a href="placeholder">Restrict User Settings</a>
+        <a href="placeholder">Saved Foods</a>
+        <a href="placeholder">Saved Recipes</a>
+    </sidebar>
 </body>
 
 </html>
