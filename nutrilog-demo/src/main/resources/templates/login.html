@@ -98,9 +98,17 @@
                 // Redirect to the user page
                 console.log("Redirecting to user page..."); // Debug statement
                 window.location.href = './user.html';
-            } else {
-                // Display an error message (you can customize this part)
-                alert('Invalid email or password. Please try again.');
+            } else if (email.toLowerCase() === "specialist@prototype.com" && password === "specialist") {
+                // Redirect to the specialist page
+                console.log("Redirecting to specialist page..."); // Debug statement
+                window.location.href = './specialist.html';
+            } else if (email.toLowerCase() === "admin@prototype.com" && password === "admin") {
+                  // Redirect to the admin page
+                  console.log("Redirecting to admin page..."); // Debug statement
+                window.location.href = './admin.html';
+            } else{
+                 // Display an error message (you can customize this part)
+                 alert('Invalid email or password. Please try again.');
             }
         });
     </script>
