@@ -45,7 +45,7 @@ a {
     font-size: x-large;
 }
 
-.big-sign-up-button{
+.big-sign-up-button {
     display: flex;
     align-items: center;
     font-size: xx-large;
@@ -59,7 +59,7 @@ a {
     transform: translate(-50%, -10%);
 }
 
-#sign-up-button{
+#sign-up-button {
     justify-content: center;
     color: white;
     background-color: green;
