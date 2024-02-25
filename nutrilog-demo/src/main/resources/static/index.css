@@ -1,20 +1,38 @@
+/* Other stylesheets */
+@import url(./sidebar_style.css);
+@import url(./admin.css);
+@import url(./specialist.css);
+@import url(./user.css);
+
+/* Element Selectors  */
 * {
     /* outline: solid black 1px; */
     font-family: "Poppins", sans-serif;
     text-decoration: none;
     margin: 0;
     padding: 0;
+    max-width: 100vw;
+    text-align: center;
+    background-color: #f9f9f9;
 }
 
 a {
     color: inherit;
 }
 
-.nav-item {
-    display: flex;
-    align-items: center;
+h1,
+h2,
+h3 {
+    font-size: 2em;
+    font-weight: normal;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Main navbar and navbar items */
 #navbar {
     padding: 10px 10px;
     font-size: 25px;
@@ -29,41 +47,98 @@ a {
     margin-right: 0.25em;
 }
 
-#login-button {
-    justify-content: center;
-    color: white;
-    font-weight: bolder;
-    font-size: 15px;
-    box-shadow: 0;
-    border: 0;
-    background-color: rgb(1, 136, 1);
-    width: 10%;
-    border-radius: 2.5px;
+.nav-item,
+.nav-item * {
+    display: flex;
+    align-items: center;
+    background-color: inherit;
+}
+
+/* Services navbar */
+.services-navbar {
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(78, 255, 78);
+    box-shadow: 0 5px 5px -5px gray;
+    justify-content: space-around;
+}
+
+.services-navbar-item,
+.services-navbar-item * {
+    background-color: inherit;
+    color: black;
+}
+
+/* Services main section */
+.services-main-container {
+    margin: auto;
+    margin-top: 10vh;
+    max-width: 50vw;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.services-main-item {
+    text-align: left;
+}
+
+/* Articles */
+.article-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.article-item {
+    max-width: 50vw;
+    display: flex;
+    padding: 10px;
 }
 
 .why-nutrilog {
     font-size: x-large;
 }
 
-.big-sign-up-button {
-    display: flex;
-    align-items: center;
-    font-size: xx-large;
+/* Anchors that look like buttons*/
+.button {
     justify-content: center;
-    height: 100px;
-    border: 3px solid green; 
-    position: relative;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -10%);
+    color: white;
+    font-weight: bolder;
+    font-size: 15px;
+    box-shadow: 0;
+    border: 0;
+    background-color: #06B131;
+    width: 10%;
+    border-radius: 2.5px;
 }
 
 #sign-up-button {
+    font-size: 1.5em;
+    margin: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#login-button,
+#logout-button {
     justify-content: center;
     color: white;
-    background-color: green;
+    font-weight: bolder;
+    font-size: 15px;
+    box-shadow: 0;
     border: 0;
-    width: 50%;
-    text-align: center;
+    background-color: #06B131;
+    width: 10%;
+    border-radius: 2.5px;
+}
+
+#logout-button {
+    background: #007bff;
+}
+
+#logout-button:hover {
+    background-color: #0056b3;
 }

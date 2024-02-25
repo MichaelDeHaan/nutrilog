@@ -10,78 +10,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-
-        #admin-container {
-            width: 100%;
-            max-width: 800px;
-            margin: 100px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-
-        #admin-container h2 {
-            margin-bottom: 20px;
-        }
-
-        #admin-info {
-            margin-bottom: 20px;
-        }
-
-        #admin-info p {
-            margin: 10px 0;
-        }
-
-        #logout-button {
-            padding: 10px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
-        }
-
-        #logout-button:hover {
-            background-color: #0056b3;
-        }
-    </style>
 </head>
 
 <body>
     <nav id="navbar">
         <a class="nav-item" href="./index.html">
-            <img id="icon" src="../static/icon.png" alt="Fork, knife, and plate icon">
+            <img id="icon" src="../static/images/icon.png" alt="Fork, knife, and plate icon">
             <span>NutriLog</span>
         </a>
+        <a id="logout-button" class="nav-item" href="./index.html">Logout</a>
     </nav>
-    <main id="admin-container">
-        <h2>Welcome to Your NutriLog Admin Page</h2>
-        <section id="admin-info">
-            <p><strong>Name:</strong> Admin User</p>
-            <p><strong>Email:</strong> admin@example.com</p>
-            <!-- You can add more admin information here -->
-        </section>
-        <a href="./login.html" id="logout-button">Logout</a>
+
+    <header class="services-navbar">
+        <a class="services-navbar-item" href="placeholder">Add User</a>
+        <a class="services-navbar-item" href="placeholder">Delete User</a>
+        <a class="services-navbar-item" href="placeholder">Request Feedback</a>
+        <a class="services-navbar-item" href="placeholder">View Metadata</a>
+    </header>
+
+    <main class="services-main-container">
+        <h1>Welcome to Your NutriLog Admin Page</h1>
+        <p class="services-main-item"><strong>Name:</strong> Admin User</p>
+        <p class="services-main-item"><strong>Email:</strong> admin@example.com</p>
     </main>
-
-    <sidebar class="sidenav" id="sidebar-wrapper">
-        <a href="placeholder">Add User</a>
-        <a href="placeholder">Delete User</a>
-        <a href="placeholder">Request Feedback</a>
-        <a href="placeholder">View Metadata</a>
-    </sidebar>
-
 </body>
 
 </html>

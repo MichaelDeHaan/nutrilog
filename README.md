@@ -22,3 +22,5 @@ an Admin has full access to the system and can perform operations on User and Sp
 ## Documents
 
 > [Software Requirements Specification](./docs/nutrilog-srs.pdf)
+
+> [Credits](./docs/credits.md)
