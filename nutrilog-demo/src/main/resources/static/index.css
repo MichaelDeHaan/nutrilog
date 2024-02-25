@@ -81,20 +81,25 @@ img {
     text-align: left;
 }
 
-/*style for the services bar*/
+/*Services bar*/
+.services-navbar {
+    background-color: #008120;
+}
+
 .services-navbar a {
     float: none;
     text-align: center;
     text-decoration: none;
     font-size: 25px;
-    background-color: rgb(63, 206, 63);
+    background-color: inherit;
     color: white;
     display: block;
-} 
-.services-navbar a:hover{
+}
+
+.services-navbar a:hover {
     background-color: green;
     color: white;
-} 
+}
 
 
 /* Articles */

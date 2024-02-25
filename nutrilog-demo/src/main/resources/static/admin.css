@@ -16,18 +16,74 @@ td {
     margin-right: auto;
 }
 
-#services-options-container {
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+/* Analytics */
+
+#analytics-page {
+    padding-top: 50px;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.services-options {
-    color: white;
-    font-size: 1.25em;
-    border-radius: 2.5px;
-    background-color: #007bff;
-    margin: 5px;
+#analytics-right {
+    display: flex;
+}
+
+#analytics-right .analytics-item {
+    flex: 1 1 100%;
+    border: none;
+}
+
+
+.analytics-container {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.analytics-item {
+    flex: 1 1 40%;
     padding: 10px;
+    margin: 10px;
+    height: 15vh;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.analytic-data {
+    padding-top: 50px;
+}
+
+/* Feedback */
+
+#feedback-container {
+    width: 65vw;
+    margin: 100px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#feedback-container * {
+    border: 0.5px solid;
+}
+
+#feedback-title {
+    font-size: 1.5em;
+}
+
+#login-container h2 {
+    margin-bottom: 20px;
+}
+
+#feedback-message {
+    text-align: left;
+    display: block;
+    padding-bottom: 100px;
+}
+
+#feedback-form {
+    display: flex;
+    flex-direction: column;
 }

@@ -5,10 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../../static/index.css">
+    <link rel="stylesheet" href="../../static/admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <nav id="navbar">
+        <a class="nav-item" href="../index.html">
+            <img id="icon" src="../../static/images/icon.png" alt="Fork, knife, and plate icon">
+            <span>NutriLog</span>
+        </a>
+        <a id="logout-button" class="nav-item" href="./index.html">Logout</a>
+    </nav>
 
+    <section class="services-navbar" id="services-bar">
+        <a href="../admin.html">Admin Homepage</a>
+        <a href="../admin/feedback-request.html">Request User Feedback</a>
+        <a href="../admin/metadata.html">View Analytics</a>
+    </section>
+
+    <main id="feedback-container">
+        <p id="feedback-title">Feedback Request From</p>
+        <form id="feedback-form">
+            <input type="text" name="feedback-message" id="feedback-message" placeholder="Message">
+            <select name="select-user" id="select-user">
+                <option value="" disabled selected>Select a user</option>
+                <option>Murphy Clay</option>
+                <option>Olivia Jackson</option>
+                <option>Case Park</option>
+                <option>Joyce Moody</option>
+                <option>Riley Hester</option>
+                <option>Chandler Boyer</option>
+            </select>
+            <button type="submit">Send</button>
+        </form>
+    </main>
 </body>
+
 
 </html>
