@@ -6,72 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Specialist Page - NutriLog</title>
     <link rel="stylesheet" href="../static/index.css">
-    <link rel="stylesheet" href="../static/sidebar_style.css">
+    <link rel="stylesheet" href="../static/specialist.css">
+    <link rel="stylesheet" href="../static/search-database.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
-    <style>
-        .main-body {
-            position: fixed;
-            justify-content: center;
-            top: 10%;
-            left: 50%;
-            right: 70%;
-            -ms-transform: translate(-50%, -50%);
-            transform: translate(-10%, -10%);
-        }
-
-        .search {
-            display: flex;
-            align-items: center;
-            font-size: xx-large;
-            justify-content: center;
-            height: 100px;
-            border: 3px solid green;
-            position: relative;
-            top: 10%;
-            left: 50%;
-            -ms-transform: translate(-50%, -50%);
-            transform: translate(-20%, 310%);
-        }
-
-        #search-button {
-            justify-content: center;
-            color: white;
-            background-color: green;
-            border: 0;
-            width: 50%;
-            text-align: center;
-        }
-
-        .searching {
-            display: flex;
-            align-items: center;
-            font-size: xx-large;
-            justify-content: center;
-            position: absolute;
-            top: 12%;
-            left: 55%;
-
-            -ms-transform: translate(50%, -50%);
-            transform: translate(-1%, 1000%);
-        }
-
-        #search {
-            justify-content: center;
-            background-color: white;
-            color: black;
-            border: 0;
-            width: 20%;
-        }
-    </style>
 </head>
 
 <body>
     <nav id="navbar">
         <a class="nav-item" href="./index.html">
-            <img id="icon" src="../static/icon.png" alt="Fork, knife, and plate icon">
+            <img id="icon" src="../static/images/icon.png" alt="Fork, knife, and plate icon">
             <span>NutriLog</span>
         </a>
     </nav>
@@ -84,11 +30,12 @@
         <a id="search-button" class="search" href="search-results.html">Search for food</a>
     </main>
 
-    <sidebar class="sidenav" id="sidebar-wrapper">
-        <a href="placeholder">Create User Nutrition Plans</a>
-        <a href="placeholder">Restrict User Settings</a>
-        <a href="placeholder">Saved Foods</a>
-        <a href="placeholder">Saved Recipes</a>
+    <sidebar class="Spec-services-navbar" id="Spec-services-wrapper">
+        <a href="specialist.html">Specialist Homepage</a>
+        <a href="create-nutrition-plan.html">Create User Nutrition Plans</a>
+        <a href="restrict-user-settings.html">Restrict User Settings</a>
+        <a href="saved-foods.html">Saved Foods</a>
+        <a href="saved-recipes.html">Saved Recipes</a>
     </sidebar>
 </body>
 

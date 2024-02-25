@@ -20,41 +20,6 @@ body {
     align-items: center;
 }
 
-/*style for the sidebar*/
-.Spec-services-navbar {
-    height: 100%;
-    width: 160px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgb(63, 206, 63);
-    overflow-x: hidden;
-    padding-top: 20px;
-    z-index: 1000;    
-}
-
-#Spec-services-wrapper {
-    z-index: 10;
-    position: fixed;
-    height: 90%;
-    transform: translateY(9%);
-}
-
-.Spec-services-navbar a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    background-color: rgb(63, 206, 63);
-    color: white;
-    display: block;
-}
-
-.Spec-services-navbar a:hover{
-    background-color: green;
-    color: white;
-}
-
 /* Search button for database */
 
 .big-search-button {
