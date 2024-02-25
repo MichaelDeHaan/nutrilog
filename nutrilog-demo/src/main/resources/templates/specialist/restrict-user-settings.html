@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Specialist Page - NutriLog</title>
-    <link rel="stylesheet" href="../static/index.css">
-    <link rel="stylesheet" href="../static/specialist.css">
+    <link rel="stylesheet" href="../../static/index.css">
+    <link rel="stylesheet" href="../../static/specialist.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -17,13 +17,13 @@
 
     <nav id="navbar">
         <a class="nav-item" href="./index.html">
-            <img id="icon" src="../static/images/icon.png" alt="Fork, knife, and plate icon">
+            <img id="icon" src="../../static/images/icon.png" alt="Fork, knife, and plate icon">
             <span>NutriLog</span>
         </a>
     </nav>
    
-    <sidebar class="Spec-services-navbar" id="Spec-services-wrapper">
-        <a href="specialist.html">Specialist Homepage</a>
+    <sidebar class="services-navbar" id="services-bar">
+        <a href="../specialist.html">Specialist Homepage</a>
         <a href="create-nutrition-plan.html">Create User Nutrition Plans</a>
         <a href="restrict-user-settings.html">Restrict User Settings</a>
         <a href="saved-foods.html">Saved Foods</a>
@@ -32,7 +32,7 @@
 
     <main id="main-body">
 
-        <h1> Create Nutrition Plans for Users</h1>
+        <h1> Restrict User Settings</h1>
 
         <label>Choose a User:</label>
         <select id="cars">
@@ -51,15 +51,12 @@
 
         <br>
 
-        <label>Choose a diet: </label>
+        <label>Choose a restriction: </label>
 
         <select id="cars">
-            <option value="volvo">Diabetic diet</option>
-            <option value="saab">Weight loss diet for adults</option>
+            <option value="volvo">User can't search for junk food</option>
+            <option value="saab">User can't search for alcohol</option>
         </select>
-
-
-            
 
     </main>
 </body>

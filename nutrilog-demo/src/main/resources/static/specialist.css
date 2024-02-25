@@ -60,7 +60,7 @@ body {
 .big-search-button {
     background-color: green;
     color: white;
-    font: xx-large;
+    font-size: xx-large;
 }
 
 #user-container h2 {
