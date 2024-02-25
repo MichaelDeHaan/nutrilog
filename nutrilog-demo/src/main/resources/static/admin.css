@@ -1,0 +1,33 @@
+* {
+    /* outline: solid black 1px; */
+}
+
+table,
+th,
+td {
+    border: 0.5px solid;
+    border-collapse: collapse;
+}
+
+#user-table {
+    padding: 100px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#services-options-container {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.services-options {
+    color: white;
+    font-size: 1.25em;
+    border-radius: 2.5px;
+    background-color: #007bff;
+    margin: 5px;
+    padding: 10px;
+}
