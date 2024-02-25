@@ -14,26 +14,14 @@
 </head>
 
 <body>
+
     <nav id="navbar">
         <a class="nav-item" href="./index.html">
             <img id="icon" src="../static/images/icon.png" alt="Fork, knife, and plate icon">
             <span>NutriLog</span>
         </a>
     </nav>
-
-    <article id="specialist-container">
-        <div id="specialist-info">
-            <h2>Welcome to Your NutriLog Specialist Page</h2>
-            <div id="specialist-info">
-                <p><strong>Name:</strong> John Doe</p>
-                <p><strong>Email:</strong> johndoe@example.com</p>
-            </div>
-            <a href="login.html" id="logout-button" onclick="logout()">Logout</a>
-        </div>
-    </article>
-
-    <a class="big-search-button" href="search-food-database.html">Search Food Database</a>
-
+   
     <sidebar class="Spec-services-navbar" id="Spec-services-wrapper">
         <a href="specialist.html">Specialist Homepage</a>
         <a href="create-nutrition-plan.html">Create User Nutrition Plans</a>
@@ -41,6 +29,36 @@
         <a href="saved-foods.html">Saved Foods</a>
         <a href="saved-recipes.html">Saved Recipes</a>
     </sidebar>
+
+    <main id="main-body">
+
+        <h1> Restrict User Settings</h1>
+
+        <label>Choose a User:</label>
+        <select id="cars">
+            <option value="volvo">John Doe</option>
+            <option value="saab">Jane Doe</option>
+        </select>
+
+        <br>
+
+        <label>Choose an age: </label>
+
+        <select id="cars">
+            <option value="volvo">User is a child</option>
+            <option value="saab">User is an adult</option>
+        </select>
+
+        <br>
+
+        <label>Choose a restriction: </label>
+
+        <select id="cars">
+            <option value="volvo">User can't search for junk food</option>
+            <option value="saab">User can't search for alcohol</option>
+        </select>
+
+    </main>
 </body>
 
 </html>

@@ -55,6 +55,7 @@ img {
 }
 
 /* Services navbar */
+
 .services-navbar {
     font-size: 25px;
     display: flex;
@@ -62,13 +63,13 @@ img {
     background-color: rgb(78, 255, 78);
     box-shadow: 0 5px 5px -5px gray;
     justify-content: space-around;
-}
+} 
 
-.services-navbar-item,
-.services-navbar-item * {
+/*#services-navbar-item, */
+#services-navbar-item {
     background-color: inherit;
     color: black;
-}
+}  
 
 /* Services main section */
 .services-main-container {
@@ -78,7 +79,7 @@ img {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+} 
 
 .services-main-item {
     text-align: left;
