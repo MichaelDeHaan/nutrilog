@@ -1,0 +1,116 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Personal Settings - NutriLog</title>
+    <link rel="stylesheet" href="../static/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        #navbar {
+            width: 100%;
+            background-color: rgb(78, 255, 78);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 10px 20px;
+            box-sizing: border-box;
+        }
+
+        .nav-item {
+            text-decoration: none;
+            color: #333;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-item img {
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        #settings-form {
+            width: 300px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #settings-form h2 {
+            margin-bottom: 20px;
+        }
+
+        #settings-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        #save-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #save-button:hover {
+            background-color: #0056b3;
+        }
+
+        #return-button {
+            margin-top: 10px; /* Increased margin top */
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        #return-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <a class="nav-item" href="../index.html">
+            <img id="icon" src="../../static/images/icon.png" alt="Fork, knife, and plate icon">
+            <span>NutriLog</span>
+        </a>
+    </nav>
+    <div id="settings-form">
+        <h2>Manage Personal Settings</h2>
+        <form id="personal-settings-form">
+            <input type="text" id="name" placeholder="Enter Your New Name" required>
+            <input type="text" id="allergies" placeholder="Enter Food Allergies (comma separated)">
+            <input type="number" id="age" placeholder="Enter Your Age" required>
+            <button type="submit" id="save-button">Save Changes</button>
+        </form>
+        <a href="../user.html" id="return-button">Return to User Page</a>
+    </div>
+</body>
+
+</html>
