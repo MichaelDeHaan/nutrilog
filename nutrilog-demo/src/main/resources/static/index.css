@@ -103,18 +103,13 @@ img {
 
 
 /* Articles */
-.article-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
 
+/*  
 .article-item {
     max-width: 50vw;
     display: flex;
     padding: 10px;
-}
+} */
 
 .why-nutrilog {
     font-size: x-large;
@@ -153,4 +148,49 @@ th,
 td {
     border: 0.5px solid;
     border-collapse: collapse;
+}
+
+/* Homepage main sections */
+#homepage-main-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#homepage-main-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+#homepage-main-left-title {
+    font-size: 2em;
+    margin: 0 auto;
+}
+
+#homepage-main-left-text {
+    font-size: 1.5em;
+}
+
+#homepage-main-left-button {
+    font-size: 1.5em;
+    color: white;
+    font-weight: bolder;
+    box-shadow: 0;
+    border: 0;
+    background-color: #06B131;
+    border-radius: 2.5px;
+    margin: 5% auto;
+    width: 30%;
+}
+
+#homepage-main-right {
+    max-width: 50vw;
+    flex-grow: 1;
+}
+
+.article-container {
+    font-size: 1.5em;
 }
