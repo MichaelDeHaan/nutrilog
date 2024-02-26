@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -54,13 +57,19 @@
             margin-bottom: 20px;
         }
 
-        #settings-form input {
+        #settings-form input[type="text"],
+        #settings-form input[type="number"] {
             width: 100%;
             padding: 10px;
             margin-bottom: 15px;
             border: 1px solid #ccc;
             border-radius: 5px;
             box-sizing: border-box;
+        }
+
+        #settings-form input[type="checkbox"] {
+            margin-bottom: 15px;
+            margin-right: 5px;
         }
 
         #save-button {
@@ -71,6 +80,7 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            margin-bottom: 20px;
         }
 
         #save-button:hover {
@@ -78,7 +88,7 @@
         }
 
         #return-button {
-            margin-top: 10px; /* Increased margin top */
+            margin-top: 40px; /* Increased margin top */
             padding: 10px 20px;
             background-color: #007bff;
             color: #fff;
@@ -107,6 +117,12 @@
             <input type="text" id="name" placeholder="Enter Your New Name" required>
             <input type="text" id="allergies" placeholder="Enter Food Allergies (comma separated)">
             <input type="number" id="age" placeholder="Enter Your Age" required>
+            <label for="diabetes">Diabetes:</label>
+            <input type="checkbox" id="diabetes" name="diabetes">
+            <label for="high-blood-sugar">High Blood Sugar:</label>
+            <input type="checkbox" id="high-blood-sugar" name="high-blood-sugar">
+            <label for="low-vitamin-counts">Low Vitamin Counts:</label>
+            <input type="checkbox" id="low-vitamin-counts" name="low-vitamin-counts">
             <button type="submit" id="save-button">Save Changes</button>
         </form>
         <a href="../user.html" id="return-button">Return to User Page</a>
