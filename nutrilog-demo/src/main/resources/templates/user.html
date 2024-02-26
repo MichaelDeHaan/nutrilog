@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Page - NutriLog</title>
     <link rel="stylesheet" href="../static/index.css">
-    <link rel="stylesheet" href="../static/sidebar_style.css">
+    <link rel="stylesheet" href="../static/specialist.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -61,7 +61,7 @@
 <body>
     <nav id="navbar">
         <a class="nav-item" href="./index.html">
-            <img id="icon" src="../static/icon.png" alt="Fork, knife, and plate icon">
+            <img id="icon" src="../static/images/icon.png" alt="Fork, knife, and plate icon">
             <span>NutriLog</span>
         </a>
     </nav>
@@ -75,14 +75,14 @@
         <a href="./login.html"  id="logout-button" onclick="logout()">Logout</a>
     </main>
 
-    <a id="sign-up-button" class="big-sign-up-button" href="signup.html">Search Food Database</a>
+    <a id="big-search-button" class="big-search-button" href="../templates/specialist/search-food-database.html">Search Food Database</a>
 
-    <sidebar class="sidenav" id="sidebar-wrapper">
-        <a href="placeholder">Request Specialist Assistance</a>
-        <a href="placeholder">Manage Personal Settings</a>
+    <section class="services-navbar" id="services-bar">
+        <a href="./user/Request-specialist-assistance.html">Request Specialist Assistance</a>
+        <a href="./user/Manage-personal-settings.html">Manage Personal Settings</a>
         <a href="placeholder">Saved Foods</a>
         <a href="placeholder">Saved Recipes</a>
-    </sidebar>
+    </section>
 
 
 </body>
