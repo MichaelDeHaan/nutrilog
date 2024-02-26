@@ -87,3 +87,17 @@ body {
 #logout-button:hover {
     background-color: #0056b3;
 }
+
+table,
+th,
+td {
+    border: 0.5px solid;
+    border-collapse: collapse;
+}
+
+#user-table {
+    padding: 100px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}

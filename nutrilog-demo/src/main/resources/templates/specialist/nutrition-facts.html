@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Specialist Page - NutriLog</title>
-    <link rel="stylesheet" href="../static/index.css">
-    <link rel="stylesheet" href="../static/specialist.css">
-    <link rel="stylesheet" href="../static/search-database.css">
+    <link rel="stylesheet" href="../../static/index.css">
+    <link rel="stylesheet" href="../../static/specialist.css">
+    <link rel="stylesheet" href="../../static/search-database.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -15,31 +15,31 @@
 </head>
 
 <body>
+
     <nav id="navbar">
-        <a class="nav-item" href="./index.html">
-            <img id="icon" src="../static/images/icon.png" alt="Fork, knife, and plate icon">
+        <a class="nav-item" href="../index.html">
+            <img id="icon" src="../../static/images/icon.png" alt="Fork, knife, and plate icon">
             <span>NutriLog</span>
         </a>
+        <a id="logout-button" class="nav-item" href="../index.html">Logout</a>
     </nav>
-
-    <sidebar class="services-navbar" id="services-bar">
-        <a href="specialist.html">Specialist Homepage</a>
+   
+    <section class="services-navbar" id="services-bar">
+        <a href="../specialist.html">Specialist Homepage</a>
         <a href="create-nutrition-plan.html">Create User Nutrition Plans</a>
         <a href="restrict-user-settings.html">Restrict User Settings</a>
         <a href="saved-foods.html">Saved Foods</a>
         <a href="saved-recipes.html">Saved Recipes</a>
-    </sidebar>
-    
+    </section>
+
     <main id="main-body">
 
-        <searchbar id="search" class="searching">
-            <input type="text" placeholder="Search for food..">
-        </searchbar>
+        <h1>Nutrition Facts: </h1>
 
-        <a id="search-button" class="search" href="search-results.html">Search for food</a>
+        <img class="nutrition-facts-label" src="../../static/images/nutrition-facts-label.jpg"></a>
+            
+
     </main>
-
-    
 </body>
 
 </html>

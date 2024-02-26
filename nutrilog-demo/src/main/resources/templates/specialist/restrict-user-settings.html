@@ -16,47 +16,133 @@
 <body>
 
     <nav id="navbar">
-        <a class="nav-item" href="./index.html">
+        <a class="nav-item" href="../index.html">
             <img id="icon" src="../../static/images/icon.png" alt="Fork, knife, and plate icon">
             <span>NutriLog</span>
         </a>
+        <a id="logout-button" class="nav-item" href="../index.html">Logout</a>
     </nav>
    
-    <sidebar class="services-navbar" id="services-bar">
+    <section class="services-navbar" id="services-bar">
         <a href="../specialist.html">Specialist Homepage</a>
         <a href="create-nutrition-plan.html">Create User Nutrition Plans</a>
         <a href="restrict-user-settings.html">Restrict User Settings</a>
         <a href="saved-foods.html">Saved Foods</a>
         <a href="saved-recipes.html">Saved Recipes</a>
-    </sidebar>
+    </section>
 
-    <main id="main-body">
+    <main>
 
         <h1> Restrict User Settings</h1>
 
-        <label>Choose a User:</label>
-        <select id="cars">
-            <option value="volvo">John Doe</option>
-            <option value="saab">Jane Doe</option>
-        </select>
+        <section>
+            <table id="user-table">
+                <tr>
+                    <th>User Name</th>
+                    <th>User ID</th>
+                    <th>User Age Group</th>
+                    <th>User Restriction</th>
+                </tr>
+                <tr>
+                    <td>Murphy Clay</td>
+                    <td>U1077222278</td>
+                    <td>
+                        <select name="user-age-group">
+                            <option value="adult">Adult</option>
+                            <option value="child">Child</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="user-restriction">
+                            <option value="processed">Can see processed foods</option>
+                            <option value="unprocessed">Cannot see processed foods</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Olivia Jackson</td>
+                    <td>U6282325538</td>
+                    <td>
+                        <select name="user-age-group">
+                            <option value="adult">Adult</option>
+                            <option value="child">Child</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="user-restriction">
+                            <option value="processed">Can see processed foods</option>
+                            <option value="unprocessed">Cannot see processed foods</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Case Park</td>
+                    <td>U4820744598</td>
+                    <td>
+                        <select name="user-age-group">
+                            <option value="adult">Adult</option>
+                            <option value="child">Child</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="user-restriction">
+                            <option value="processed">Can see processed foods</option>
+                            <option value="unprocessed">Cannot see processed foods</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>U7586221780</td>
+                    <td>
+                        <select name="user-age-group">
+                            <option value="adult">Adult</option>
+                            <option value="child">Child</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="user-restriction">
+                            <option value="processed">Can see processed foods</option>
+                            <option value="unprocessed">Cannot see processed foods</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jane Doe</td>
+                    <td>U1497823505</td>
+                    <td>
+                        <select name="user-age-group">
+                            <option value="adult">Adult</option>
+                            <option value="child">Child</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="user-restriction">
+                            <option value="processed">Can see processed foods</option>
+                            <option value="unprocessed">Cannot see processed foods</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>James Hetfield</td>
+                    <td>U19602023725</td>
+                    <td>
+                        <select name="user-age-group">
+                            <option value="adult">Adult</option>
+                            <option value="child">Child</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="user-restriction">
+                            <option value="processed">Can see processed foods</option>
+                            <option value="unprocessed">Cannot see processed foods</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </section>
 
-        <br>
-
-        <label>Choose an age: </label>
-
-        <select id="cars">
-            <option value="volvo">User is a child</option>
-            <option value="saab">User is an adult</option>
-        </select>
-
-        <br>
-
-        <label>Choose a restriction: </label>
-
-        <select id="cars">
-            <option value="volvo">User can't search for junk food</option>
-            <option value="saab">User can't search for alcohol</option>
-        </select>
+        
 
     </main>
 </body>
