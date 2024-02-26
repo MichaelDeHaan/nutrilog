@@ -101,16 +101,6 @@ img {
     color: white;
 }
 
-
-/* Articles */
-
-/*  
-.article-item {
-    max-width: 50vw;
-    display: flex;
-    padding: 10px;
-} */
-
 .why-nutrilog {
     font-size: x-large;
 }
@@ -172,10 +162,12 @@ td {
 
 #homepage-main-left-text {
     font-size: 1.5em;
+    text-align: left;
 }
 
 #homepage-main-left-button {
     font-size: 1.5em;
+    text-align: center;
     color: white;
     font-weight: bolder;
     box-shadow: 0;
@@ -192,5 +184,103 @@ td {
 }
 
 .article-container {
+    padding-left: 10px;
+    padding-right: 10px;
     font-size: 1.5em;
+}
+
+.article-container p {
+    padding-bottom: 10px;
+    padding-right: 20vw;
+}
+
+.temp-user-item {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+#about-text {
+    text-align: left;
+}
+
+/* Signup */
+#signup-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#signup-container h2 {
+    margin-bottom: 20px;
+}
+
+#signup-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#signup-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#signup-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Login */
+#login-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#login-container h2 {
+    margin-bottom: 20px;
+}
+
+#login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#login-form button:hover {
+    background-color: #0056b3;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #333;
 }
