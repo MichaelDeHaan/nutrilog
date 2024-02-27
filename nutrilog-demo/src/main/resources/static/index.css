@@ -8,279 +8,186 @@
     margin: 0;
     padding: 0;
     max-width: 100vw;
-    text-align: center;
     background-color: #f9f9f9;
 }
 
-a {
-    color: inherit;
-}
+/* Page */
+.page {}
 
-h1,
-h2,
-h3 {
-    font-size: 2em;
-    font-weight: normal;
-}
-
-img {
-    width: 100%;
-    height: auto;
-}
-
-/* Main navbar and navbar items */
-#navbar {
-    padding: 10px 10px;
-    font-size: 25px;
+/* Navbar */
+.navbar {
+    height: 5vh;
+    min-height: 30px;
+    max-height: 60px;
+    background-color: rgb(78, 255, 78);
     display: flex;
     justify-content: space-between;
-    background-color: rgb(78, 255, 78);
-    box-shadow: 0 5px 5px -5px gray;
+    gap: 10px;
 }
 
-#icon {
-    height: 1.5em;
-    margin-right: 0.25em;
-}
-
-.nav-item,
-.nav-item * {
+.navbar__item {
+    font-size: 25px;
+    height: 100%;
     display: flex;
+    background-color: inherit;
     align-items: center;
+    color: black;
+    padding: 0px 10px;
+}
+
+.navbar__icon {
+    background-color: inherit;
+    height: 75%;
+}
+
+.navbar__title {
+    padding-left: 10px;
     background-color: inherit;
 }
 
-/* Services navbar and items */
-
+/* Services Navbar */
 .services-navbar {
-    font-size: 25px;
     display: flex;
     justify-content: space-between;
-    background-color: rgb(78, 255, 78);
+    background-color: #008120;
     box-shadow: 0 5px 5px -5px gray;
     justify-content: space-around;
 }
 
-#services-navbar-item {
+.services-navbar_item {
+    font-size: 20px;
     background-color: inherit;
-    color: black;
+    color: white;
 }
 
-/* Services main section */
-.services-container {
+.welcome-box {
     margin: auto;
     margin-top: 10vh;
     margin-bottom: 5vh;
     max-width: 50vw;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-.services-item {
-    text-align: left;
-}
-
-/*Services bar*/
-.services-navbar {
-    background-color: #008120;
-}
-
-.services-navbar a {
-    float: none;
-    text-align: center;
-    text-decoration: none;
-    font-size: 25px;
-    background-color: inherit;
-    color: white;
-    display: block;
-}
-
-.services-navbar a:hover {
-    background-color: green;
-    color: white;
-}
-
-.why-nutrilog {
-    font-size: x-large;
-}
-
-/* Anchors that look like buttons*/
-.button {
-    justify-content: center;
-    color: white;
-    font-weight: bolder;
-    font-size: 15px;
-    box-shadow: 0;
-    border: 0;
-    background-color: #06B131;
-    width: 10%;
-    border-radius: 2.5px;
-}
-
-#sign-up-button {
+.welcome-box__title {
     font-size: 1.5em;
-    margin: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
 }
 
-#login-button,
-#logout-button {
-    justify-content: center;
-    color: black;
-    width: 10%;
+.welcome-box__text {
+    font-size: 1em;
 }
 
-/* Tables */
-table,
-th,
-td {
-    border: 0.5px solid;
-    border-collapse: collapse;
+/* Section */
+.section {
+    width: 100vw;
 }
 
-/* Homepage main sections */
-#homepage-main-container {
+.section--center {
+    align-items: center;
+}
+
+.section--split {
     display: flex;
     justify-content: space-between;
 }
 
-#homepage-main-left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-grow: 1;
-    margin-left: 10vw;
-    margin-right: 10vw;
+.section--half {
+    width: 50%;
 }
 
-#homepage-main-left-title {
+.section__content {
+    color: black;
+    display: block;
+}
+
+.section__title {
     font-size: 2em;
-    margin: 0 auto;
 }
 
-#homepage-main-left-text {
+.section__text {
     font-size: 1.5em;
+    padding: 10px;
+}
+
+.section__text--narrow {
+    padding: 10px;
+    font-size: 1.5em;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.section__content--center {
+    text-align: center;
+}
+
+.section__content--left {
     text-align: left;
 }
 
-#homepage-main-left-button {
-    font-size: 1.5em;
+.section__img {
+    width: 50%;
+}
+
+/* Buttons */
+.button {
+    display: block;
+    border: none;
+}
+
+.button--center {
     text-align: center;
-    color: white;
+}
+
+.button--medium {
+    font-size: 1.5em;
     font-weight: bolder;
     box-shadow: 0;
-    border: 0;
-    background-color: #06B131;
-    border-radius: 2.5px;
+    border-radius: 5px;
     margin: 5% auto;
-    width: 30%;
+    width: 200px;
+    max-width: 300px;
 }
 
-#homepage-main-right {
-    max-width: 50vw;
-    flex-grow: 1;
+.button--blue {
+    color: white;
+    background-color: #007bff;
 }
 
-.article-container {
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 1.5em;
-}
-
-.article-container p {
-    padding-bottom: 10px;
-    padding-right: 20vw;
-}
-
-.temp-user-item {
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: center;
-}
-
-#about-text {
-    text-align: left;
-}
-
-/* Signup */
-#signup-container {
-    width: 100%;
-    max-width: 400px;
-    margin: 100px auto;
-    padding: 20px;
-    border-radius: 8px;
+/* Cards */
+.card {
+    border-radius: 10px;
+    padding: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
 }
 
-#signup-container h2 {
+.card--center {
+    margin: 50px auto;
+}
+
+.card--medium {
+    width: 25vw;
+    height: auto;
+}
+
+.card__form {
+    width: 100%;
+}
+
+.card__title {
     margin-bottom: 20px;
 }
 
-#signup-form input {
+.card__input--text {
+    display: block;
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border: 0.5px solid lightgray;
     border-radius: 5px;
     box-sizing: border-box;
 }
 
-#signup-form button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#signup-form button:hover {
-    background-color: #0056b3;
-}
-
-/* Login */
-#login-container {
-    width: 100%;
-    max-width: 400px;
-    margin: 100px auto;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-#login-container h2 {
-    margin-bottom: 20px;
-}
-
-#login-form input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-
-#login-form button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#login-form button:hover {
-    background-color: #0056b3;
-}
-
-.nav-item {
-    text-decoration: none;
-    color: #333;
+.card__input--checkbox {
+    display: inline;
 }

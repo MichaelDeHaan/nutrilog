@@ -14,28 +14,29 @@
 </head>
 
 <body>
-
-    <nav id="navbar">
-        <a class="nav-item" href="../index.html">
-            <img id="icon" src="../../static/images/icon.png" alt="Fork, knife, and plate icon">
-            <span>NutriLog</span>
+    <nav class="navbar">
+        <a class="navbar__item" href="../index.html">
+            <img class="navbar__icon" src="../../static/images/icon.png" alt="Fork, knife, and plate icon">
+            <span class="navbar__title">NutriLog</span>
         </a>
-        <a id="logout-button" class="nav-item" href="../index.html">Logout</a>
+        <a class="navbar__item" href="../login.html">Login</a>
     </nav>
-   
-    <section class="services-navbar" id="services-bar">
-        <a href="../user/Request-specialist-assistance.html">Request Specialist Assistance</a>
-        <a href="../user/Manage-personal-settings.html">Manage Personal Settings</a>
-        <a href="../user/saved-foods-user.html">Saved Foods</a>
-        <a href="../user/saved-recipes-user.html">Saved Recipes</a>
-    </section>
+
+    <nav class="services-navbar" id="services-bar">
+        <a class="services-navbar_item" href="../user.html">User Homepage</a>
+        <a class="services-navbar_item" href="./Request-specialist-assistance.html">Request Specialist
+            Assistance</a>
+        <a class="services-navbar_item" href="./Manage-personal-settings.html">Manage Personal Settings</a>
+        <a class="services-navbar_item" href="./saved-foods-user.html">Saved Foods</a>
+        <a class="services-navbar_item" href="./saved-recipes-user.html">Saved Recipes</a>
+    </nav>
 
     <main id="main-body">
 
         <h1> Saved Recipes List</h1>
 
         <section>
-            <table id = "user-table">
+            <table id="user-table">
                 <tr>
                     <th>Low Calorie Dishes </th>
                     <th>Low Carbohydrates Dishes</th>
@@ -73,7 +74,7 @@
 
             </table>
         </section>
-            
+
 
     </main>
 </body>

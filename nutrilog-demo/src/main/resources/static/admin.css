@@ -2,6 +2,10 @@
     /* outline: solid black 1px; */
 }
 
+#temp {
+    width: 100%;
+}
+
 table,
 th,
 td {
@@ -93,9 +97,7 @@ td {
     border-radius: 5px;
 }
 
-#feedback-container * {
-    font-size: 1em;
-}
+
 
 #feedback-title {
     font-size: 1.5em;

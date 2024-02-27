@@ -12,53 +12,48 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <nav id="navbar">
-        <a class="nav-item" href="./index.html">
-            <img id="icon" src="../static/images/icon.png" alt="Fork, knife, and plate icon">
-            <span>NutriLog</span>
+<body class="page">
+    <nav class="navbar">
+        <a class="navbar__item" href="./index.html">
+            <img class="navbar__icon" src="../static/images/icon.png" alt="Fork, knife, and plate icon">
+            <span class="navbar__title">NutriLog</span>
         </a>
-        <!-- TODO: Combine with button styles -->
-        <a id="login-button" class="nav-item" href="login.html">Login</a>
+        <a class="navbar__item" href="login.html">Login</a>
     </nav>
 
     <main>
-        <article id="homepage-main-container">
-            <div id="homepage-main-left">
-                <h1 id="homepage-main-left-title">Experience Smart Nutrition</h1>
-                <p id=homepage-main-left-text>
-                    Track your food and build healthier habits with the all-in-one smart food tracking app.
+        <section class="section section--center section--split">
+            <div class="section__half">
+                <h1 class="section__content section__content--center section__title">Experience Smart Nutrition
+                </h1>
+                <p class="section__content section__content--left section__text--narrow">
+                    Track your food and build healthier habits with the all-in-one smart food
+                    tracking app.
                 </p>
-                <a id="homepage-main-left-button" href="signup.html">
-                    Start Today
-                </a>
+                <a class="button button--center button--medium button--blue" href="signup.html">Start Today</a>
             </div>
-            <figure id="homepage-main-right" class="article-item">
-                <img src="../static/images/greens-homepage.jpg" alt="">
-            </figure>
-        </article>
+            <img class="section__half section__img" src="../static/images/greens-homepage.jpg" alt="">
+        </section>
 
 
-        <article class="article-container">
-            <div>
-                <h2>About NutriLog: Smart Nutrition</h2>
-                <p id="about-text">
-                    Nutrilog is a food tracker with an emphasis on nutritional education and safety. With NutriLog, you
-                    can see the nutritional values of the foods you consume, giving you an enhanced awareness of your
-                    overall nutritional status.
-                    With NutriLog, you can customize your settings to flag ingredients you may be allergic to, such as
-                    eggs, peanuts, and shellfish.
-                    We also have nutrition specialists who can create customized nutrition plans to aid you on your path
-                    to optimal nutrition.
-                </p>
-            </div>
-        </article>
+        <section class="section">
+            <h2 class="section__title section__content--center">About NutriLog: Smart Nutrition</h2>
+            <p class="section__content section__content--left section__text">
+                Nutrilog is a food tracker with an emphasis on nutritional education and safety. With NutriLog, you
+                can see the nutritional values of the foods you consume, giving you an enhanced awareness of your
+                overall nutritional status.
+                With NutriLog, you can customize your settings to flag ingredients you may be allergic to, such as
+                eggs, peanuts, and shellfish.
+                We also have nutrition specialists who can create customized nutrition plans to aid you on your path
+                to optimal nutrition.
+            </p>
+        </section>
 
-        <list-of-users>
-            <a class="temp-user-item" href="./admin.html">Admin</a>
-            <a class="temp-user-item" href="./user.html">User</a>
-            <a class="temp-user-item" href="./specialist.html">Specialist</a>
-        </list-of-users>
+        <div>
+            <a class="section__content--left" href="./admin.html">Admin</a>
+            <a class="section__content--left" href="./user.html">User</a>
+            <a class="section__content--left" href="./specialist.html">Specialist</a>
+        </div>
     </main>
 </body>
 

@@ -13,19 +13,19 @@
 </head>
 
 <body>
-    <nav id="navbar">
-        <a class="nav-item" href="../index.html">
-            <img id="icon" src="../../static/images/icon.png" alt="Fork, knife, and plate icon">
-            <span>NutriLog</span>
+    <nav class="navbar">
+        <a class="navbar__item" href="../index.html">
+            <img class="navbar__icon" src="../../static/images/icon.png" alt="Fork, knife, and plate icon">
+            <span class="navbar__title">NutriLog</span>
         </a>
-        <a id="logout-button" class="nav-item" href="./index.html">Logout</a>
+        <a class="navbar__item" href="login.html">Login</a>
     </nav>
 
-    <section class="services-navbar" id="services-bar">
-        <a href="../admin.html">Admin Homepage</a>
-        <a href="../admin/feedback-request.html">Request User Feedback</a>
-        <a href="../admin/metadata.html">View Analytics</a>
-    </section>
+    <nav class="services-navbar">
+        <a class="services-navbar_item" href="../admin.html">Admin Homepage</a>
+        <a class="services-navbar_item" href="../admin/feedback-request.html">Request User Feedback</a>
+        <a class="services-navbar_item" href="../admin/metadata.html">View Analytics</a>
+    </nav>
 
     <main id="feedback-container">
         <p id="feedback-title">Feedback Request From</p>
@@ -40,7 +40,7 @@
                 <option>Riley Hester</option>
                 <option>Chandler Boyer</option>
             </select>
-            <button id="send-feedback-button" type="submit">Send</button>
+            <a class="button button--center button--medium button--blue" type="submit">Send</a>
         </form>
     </main>
 </body>

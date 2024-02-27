@@ -7,7 +7,6 @@
     <title>Manage Personal Settings - NutriLog</title>
     <link rel="stylesheet" href="../../static/index.css">
     <link rel="stylesheet" href="../../static/user.css">
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -15,37 +14,48 @@
 </head>
 
 <body>
-    <nav id="navbar">
-        <a class="nav-item" href="../index.html">
-            <img id="icon" src="../../static/images/icon.png" alt="Fork, knife, and plate icon">
-            <span>NutriLog</span>
+    <nav class="navbar">
+        <a class="navbar__item" href="../index.html">
+            <img class="navbar__icon" src="../../static/images/icon.png" alt="Fork, knife, and plate icon">
+            <span class="navbar__title">NutriLog</span>
         </a>
-        <a id="logout-button" class="nav-item" href="./index.html">Logout</a>
+        <a class="navbar__item" href="../login.html">Login</a>
     </nav>
 
-    <section class="services-navbar" id="service-bar">
-        <a href="../user/Request-specialist-assistance.html">Request Specialist Assistance</a>
-        <a href="../user/Manage-personal-settings.html">Manage Personal Settings</a>
-        <a href="../user/saved-foods-user.html">Saved Foods</a>
-        <a href="../user/saved-recipes-user.html">Saved Recipes</a>
-    </section>
+    <nav class="services-navbar" id="services-bar">
+        <a class="services-navbar_item" href="../user.html">User Homepage</a>
+        <a class="services-navbar_item" href="./Request-specialist-assistance.html">Request Specialist
+            Assistance</a>
+        <a class="services-navbar_item" href="./Manage-personal-settings.html">Manage Personal Settings</a>
+        <a class="services-navbar_item" href="./saved-foods-user.html">Saved Foods</a>
+        <a class="services-navbar_item" href="./saved-recipes-user.html">Saved Recipes</a>
+    </nav>
 
-    <div id="settings-form">
-        <h2>Manage Personal Settings</h2>
-        <form id="personal-settings-form">
-            <input type="text" id="name" placeholder="Enter Your New Name" required>
-            <input type="text" id="allergies" placeholder="Enter Food Allergies (comma separated)">
-            <input type="number" id="age" placeholder="Enter Your Age" required>
-            <label for="diabetes">Diabetes:</label>
-            <input type="checkbox" id="diabetes" name="diabetes">
-            <label for="high-blood-sugar">High Blood Sugar:</label>
-            <input type="checkbox" id="high-blood-sugar" name="high-blood-sugar">
-            <label for="low-vitamin-counts">Low Vitamin Counts:</label>
-            <input type="checkbox" id="low-vitamin-counts" name="low-vitamin-counts">
-            <button type="submit" id="save-button">Save Changes</button>
-        </form>
-        <a href="../user.html" id="return-button">Return to User Page</a>
-    </div>
+    <section class="section">
+        <section class="card card--center card--medium">
+            <h2 class="card__title">Manage Personal Settings</h2>
+            <form class="card__form">
+                <input class="card__input--text" type="text" id="name" placeholder="Enter Your New Name" required>
+                <input class="card__input--text" type="text" id="allergies"
+                    placeholder="Enter Food Allergies (comma separated)">
+                <input class="card__input--text" type="number" id="age" placeholder="Enter Your Age" required>
+
+                <div>
+                    <input class="card__input--checkbox" type="checkbox" name="diabetes">
+                    <label class="card__input--checkbox" for="diabetes">Diabetes</label>
+                </div>
+                <div>
+                    <input class="card__input--checkbox" type="checkbox" name="high-blood-sugar">
+                    <label class="card__input--checkbox" for="high-blood-sugar">High Blood Sugar</label>
+                </div>
+                <div>
+                    <input class="card__input--checkbox" type="checkbox" name="low-vitamin-counts">
+                    <label class="card__input--checkbox" for="low-vitamin-counts">Low Vitamin Counts</label>
+                </div>
+                <button class="button button--medium button--center button--blue" type="submit">Save Changes</button>
+            </form>
+        </section>
+    </section>
 </body>
 
 </html>
