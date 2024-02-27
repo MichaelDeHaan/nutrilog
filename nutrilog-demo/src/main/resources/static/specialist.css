@@ -75,6 +75,14 @@ body {
     margin: 10px 0;
 }
 
+.notification-box {
+    background-color: green;
+    color: white;
+    border-top: #f4f4f4;
+    width: fit-content;  
+    transform: translateX(340%);
+}
+
 /* #logout-button {
     padding: 10px;
     background-color: #007bff;
