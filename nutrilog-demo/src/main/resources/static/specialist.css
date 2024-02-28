@@ -1,6 +1,5 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
@@ -79,7 +78,7 @@ body {
     background-color: green;
     color: white;
     border-top: #f4f4f4;
-    width: fit-content;  
+    width: fit-content;
     transform: translateX(340%);
 }
 

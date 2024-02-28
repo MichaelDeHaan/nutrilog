@@ -137,6 +137,7 @@
 
 .button--center {
     text-align: center;
+    margin: 5% auto;
 }
 
 .button--medium {
@@ -144,14 +145,29 @@
     font-weight: bolder;
     box-shadow: 0;
     border-radius: 5px;
-    margin: 5% auto;
     width: 200px;
-    max-width: 300px;
+}
+
+.button--large {
+    font-size: 2em;
+    font-weight: bolder;
+    box-shadow: 0;
+    border-radius: 5px;
+    width: 400px;
+}
+
+.button--inline {
+    display: inline;
 }
 
 .button--blue {
     color: white;
     background-color: #007bff;
+}
+
+.button--red {
+    color: white;
+    background-color: red;
 }
 
 /* Cards */
@@ -165,6 +181,11 @@
     margin: 50px auto;
 }
 
+.card--large {
+    width: 50vw;
+    height: auto;
+}
+
 .card--medium {
     width: 25vw;
     height: auto;
@@ -175,7 +196,13 @@
 }
 
 .card__title {
+    text-align: center;
     margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.card__text {
+    font-size: 1.25em;
 }
 
 .card__input--text {
@@ -190,4 +217,10 @@
 
 .card__input--checkbox {
     display: inline;
+}
+
+.card__input--select {
+    display: block;
+    border: 0.5px solid lightgray;
+    border-radius: 5px;
 }

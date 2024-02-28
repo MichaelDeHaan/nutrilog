@@ -15,40 +15,49 @@
 </head>
 
 <body>
-    <nav id="navbar">
-        <a class="nav-item" href="./index.html">
-            <img id="icon" src="../static/images/icon.png" alt="Fork, knife, and plate icon">
-            <span>NutriLog</span>
+    <nav class="navbar">
+        <a class="navbar__item" href="./index.html">
+            <img class="navbar__icon" src="../static/images/icon.png" alt="Fork, knife, and plate icon">
+            <span class="navbar__title">NutriLog</span>
         </a>
-        <a id="logout-button" class="nav-item" href="./index.html">Logout</a>
+        <a class="navbar__item" href="login.html">Login</a>
     </nav>
 
-    <section class="services-navbar" id="services-bar">
-        <a href="specialist.html">Specialist Homepage</a>
-        <a href="../templates/specialist/create-nutrition-plan.html">Create User Nutrition Plans</a>
-        <a href="../templates/specialist/restrict-user-settings.html">Restrict User Settings</a>
-        <a href="../templates/specialist/saved-foods.html">Saved Foods</a>
-        <a href="../templates/specialist/saved-recipes.html">Saved Recipes</a>
+    <nav class="services-navbar">
+        <a class="services-navbar_item" href="specialist.html">Specialist Homepage</a>
+        <a class="services-navbar_item" href="../templates/specialist/create-nutrition-plan.html">Create User Nutrition
+            Plans</a>
+        <a class="services-navbar_item" href="../templates/specialist/restrict-user-settings.html">Restrict User
+            Settings</a>
+        <a class="services-navbar_item" href="../templates/specialist/saved-foods.html">Saved Foods</a>
+        <a class="services-navbar_item" href="../templates/specialist/saved-recipes.html">Saved Recipes</a>
+        <a class="services-navbar_item" href="./user/Manage-personal-settings.html">Manage Personal Settings</a>
+    </nav>
+
+    <main>
+        <section class="welcome-box">
+            <h1 class="welcome-box__title">Welcome to Your NutriLog Specialist Page</h1>
+            <p class="welcome-box__text"><strong>Name:</strong> Admin User</p>
+            <p class="welcome-box__text"><strong>Email:</strong> admin@example.com</p>
+        </section>
+    </main>
+
+
+    <a class="button button--center button--large button--blue"
+        href="../templates/specialist/search-food-database.html">Search
+        Food Database</a>
+
+    <section class="card card--center card--large">
+        <h2 class="card__title">Notification!</h2>
+        <p class="card__text">Request From: John Smith</p>
+        <button class="button button--blue button--medium button--inline">Accept</button>
+        <button class="button button--red button--medium button--inline">Pass</button>
     </section>
-
-    <article id="specialist-container">
-        <div id="specialist-info">
-            <h2>Welcome to Your NutriLog Specialist Page</h2>
-            <div id="specialist-info">
-                <p><strong>Name:</strong> John Doe</p>
-                <p><strong>Email:</strong> johndoe@example.com</p>
-            </div>
-
-        </div>
-    </article>
-
-    <a class="big-search-button" href="../templates/specialist/search-food-database.html">Search Food Database</a>
-    <br><br>
-
-    <section class = "notification-box">
-        You have a new notification <br>
-        A user has requested specialist assistance.<br>
-        Accept &MediumSpace; &MediumSpace; &MediumSpace; &MediumSpace; Pass to another Specialist
+    <section class="card card--center card--large">
+        <h2 class="card__title">Notification!</h2>
+        <p class="card__text">Request From: Jane Smith</p>
+        <button class="button button--blue button--medium button--inline">Accept</button>
+        <button class="button button--red button--medium button--inline">Pass</button>
     </section>
 </body>
 
