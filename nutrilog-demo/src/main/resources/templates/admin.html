@@ -16,15 +16,15 @@
     <nav class="navbar">
         <a class="navbar__item" href="./index.html">
             <img class="navbar__icon" src="../static/images/icon.png" alt="Fork, knife, and plate icon">
-            <span class="navbar__title">NutriLog</span>
+            <span class="navbar__item">NutriLog</span>
         </a>
         <a class="navbar__item" href="login.html">Login</a>
     </nav>
 
     <nav class="services-navbar">
-        <a class="services-navbar_item" href="./admin.html">Admin Homepage</a>
-        <a class="services-navbar_item" href="./admin/feedback-request.html">Request User Feedback</a>
-        <a class="services-navbar_item" href="./admin/metadata.html">View Analytics</a>
+        <a class="services-navbar__item" href="./admin.html">Homepage</a>
+        <a class="services-navbar__item" href="./admin/feedback-request.html">Feedback</a>
+        <a class="services-navbar__item" href="./admin/analytics.html">Analytics</a>
     </nav>
 
     <main>
@@ -34,121 +34,36 @@
             <p class="welcome-box__text"><strong>Email:</strong> admin@example.com</p>
         </section>
 
-        <section id="user-table-container">
-            <table id="user-table">
+        <section class="section section--center">
+            <table>
                 <tr>
                     <th>User Name</th>
-                    <th>User ID</th>
                     <th>User Type</th>
                     <th>User Status</th>
                     <th>Delete User</th>
                 </tr>
                 <tr>
-                    <td>Murphy Clay</td>
+                    <td>John Smith</td>
                     <td>U1077222278</td>
-                    <td>
-                        <select name="user-type" id="user-type">
-                            <option value="user">User</option>
-                            <option value="specialist">Specialist</option>
-                        </select>
-                    </td>
-                    <td>
-                        <select name="user-status" id="user-status">
-                            <option value="active">Active</option>
-                            <option value="inactive">Inactive</option>
-                        </select>
-                    </td>
-                    <td><button class="delete-user-button">-</button></td>
+                    <td>User</td>
+                    <td>Delete</td>
                 </tr>
                 <tr>
-                    <td>Olivia Jackson</td>
-                    <td>U6282325538</td>
-                    <td>
-                        <select name="user-type" id="user-type">
-                            <option value="user">User</option>
-                            <option value="specialist">Specialist</option>
-                        </select>
-                    </td>
-                    <td>
-                        <select name="user-status" id="user-status">
-                            <option value="active">Active</option>
-                            <option value="inactive">Inactive</option>
-                        </select>
-                    </td>
-                    <td><button class="delete-user-button">-</button></td>
+                    <td>John Smith</td>
+                    <td>U1077222278</td>
+                    <td>User</td>
+                    <td>Delete</td>
                 </tr>
                 <tr>
-                    <td>Case Park</td>
-                    <td>U4820744598</td>
-                    <td>
-                        <select name="user-type" id="user-type">
-                            <option value="user">User</option>
-                            <option value="specialist">Specialist</option>
-                        </select>
-                    </td>
-                    <td>
-                        <select name="user-status" id="user-status">
-                            <option value="inactive">Inactive</option>
-                            <option value="active">Active</option>
-                        </select>
-                    </td>
-                    <td><button class="delete-user-button">-</button></td>
+                    <td>John Smith</td>
+                    <td>U1077222278</td>
+                    <td>User</td>
+                    <td>Delete</td>
                 </tr>
-                <tr>
-                    <td>Joyce Moody</td>
-                    <td>S8396045819</td>
-                    <td>
-                        <select name="user-type" id="user-type">
-                            <option value="specialist">Specialist</option>
-                            <option value="user">User</option>
-                        </select>
-                    </td>
-                    <td>
-                        <select name="user-status" id="user-status">
-                            <option value="active">Active</option>
-                            <option value="inactive">Inactive</option>
-                        </select>
-                    </td>
-                    <td><button class="delete-user-button">-</button></td>
-                </tr>
-                <tr>
-                    <td>Riley Hester</td>
-                    <td>S8119503849</td>
-                    <td>
-                        <select name="user-type" id="user-type">
-                            <option value="specialist">Specialist</option>
-                            <option value="user">User</option>
-                        </select>
-                    </td>
-                    <td>
-                        <select name="user-status" id="user-status">
-                            <option value="active">Active</option>
-                            <option value="inactive">Inactive</option>
-                        </select>
-                    </td>
-                    <td><button class="delete-user-button">-</button></td>
-                </tr>
-                <tr>
-                    <td>Chandler Boyer</td>
-                    <td>S9493497691</td>
-                    <td>
-                        <select name="user-type" id="user-type">
-                            <option value="specialist">Specialist</option>
-                            <option value="user">User</option>
-                        </select>
-                    </td>
-                    <td>
-                        <select name="user-status" id="user-status">
-                            <option value="inactive">Inactive</option>
-                            <option value="active">Active</option>
-                        </select>
-                    </td>
-                    <td><button class="delete-user-button">-</button></td>
-                </tr>
-
             </table>
-            <a class="button button--center button--medium button--blue">Create a New
-                User</a>
+            <a class="button button--center button--medium button--blue">
+                New User
+            </a>
         </section>
     </main>
 </body>

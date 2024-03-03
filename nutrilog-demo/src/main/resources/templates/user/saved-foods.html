@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Request Specialist Assistance - NutriLog</title>
+    <title>User Saved Foods - NutriLog</title>
     <link rel="stylesheet" href="../../static/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -28,21 +29,35 @@
     </nav>
 
     <main>
-        <section class="section section--center">
-            <div class="card card--center card--medium card--shadow">
-                <h1 class="card__title">Contact Form</h1>
-                <form class="card__form">
-                    <input class="card__input--text" type="text" id="name" placeholder="Message" required>
-                    <select class="card__input--select" name="select-user" id="select-user">
-                        <option value="" disabled selected>Select a Nutritionist</option>
-                        <option>First Available</option>
-                        <option>Olivia Jackson</option>
-                        <option>Case Park</option>
-                    </select>
-                    <button class="button button--medium button--center button--blue" type="submit">Submit
-                        Request</button>
-                </form>
-            </div>
+        <section class="card card--large card--center">
+            <table class="table--border--none">
+                <tr>
+                    <th>Name</th>
+                    <th>Add to Today</th>
+
+                </tr>
+                <tr>
+                    <td>Cheddar Cheese</td>
+                    <td>
+                        <button class="button button--center button--blue button--small">+</button>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Apple, Fuji</td>
+                    <td>
+                        <button class="button button--center button--blue button--small">+</button>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Broccoli</td>
+                    <td>
+                        <button class="button button--center button--blue button--small">+</button>
+                    </td>
+
+                </tr>
+            </table>
         </section>
     </main>
 </body>

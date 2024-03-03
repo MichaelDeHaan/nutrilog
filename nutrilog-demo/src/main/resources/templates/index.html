@@ -12,33 +12,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 
-<body class="page">
+<body>
     <nav class="navbar">
         <a class="navbar__item" href="./index.html">
             <img class="navbar__icon" src="../static/images/icon.png" alt="Fork, knife, and plate icon">
-            <span class="navbar__title">NutriLog</span>
+            <span class="navbar__item">NutriLog</span>
         </a>
         <a class="navbar__item" href="login.html">Login</a>
     </nav>
 
     <main>
         <section class="section section--center section--split">
-            <div class="section__half">
-                <h1 class="section__content section__content--center section__title">Experience Smart Nutrition
+            <div class="section__left">
+                <h1 class="section__title">
+                    Experience Smart Nutrition
                 </h1>
-                <p class="section__content section__content--left section__text--narrow">
+                <p class="section__text section__text--narrow">
                     Track your food and build healthier habits with the all-in-one smart food
                     tracking app.
                 </p>
-                <a class="button button--center button--medium button--blue" href="signup.html">Start Today</a>
+                <a class="button button--medium button--blue" href="signup.html">Start Today</a>
             </div>
-            <img class="section__half section__img" src="../static/images/greens-homepage.jpg" alt="">
+            <div class="section__right">
+                <img class="img" src="../static/images/greens-homepage.jpg" alt="">
+            </div>
         </section>
 
 
-        <section class="section">
-            <h2 class="section__title section__content--center">About NutriLog: Smart Nutrition</h2>
-            <p class="section__content section__content--left section__text">
+        <section class="section section--inline">
+            <h2 class="section__title">About NutriLog: Smart Nutrition</h2>
+            <p class="section__text">
                 Nutrilog is a food tracker with an emphasis on nutritional education and safety. With NutriLog, you
                 can see the nutritional values of the foods you consume, giving you an enhanced awareness of your
                 overall nutritional status.
@@ -49,10 +52,10 @@
             </p>
         </section>
 
-        <div>
-            <a class="section__content--left" href="./admin.html">Admin</a>
-            <a class="section__content--left" href="./user.html">User</a>
-            <a class="section__content--left" href="./specialist.html">Specialist</a>
+        <div class="section section--inline">
+            <a class="section__text" href="./admin.html">Admin</a>
+            <a class="section__text" href="./user.html">User</a>
+            <a class="section__text" href="./specialist.html">Specialist</a>
         </div>
     </main>
 </body>

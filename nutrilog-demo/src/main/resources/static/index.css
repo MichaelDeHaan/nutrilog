@@ -1,4 +1,6 @@
 /* Other stylesheets */
+@import url(./cards.css);
+@import url(./tables.css);
 
 /* Element Selectors  */
 * {
@@ -10,9 +12,6 @@
     max-width: 100vw;
     background-color: #f9f9f9;
 }
-
-/* Page */
-.page {}
 
 /* Navbar */
 .navbar {
@@ -40,11 +39,6 @@
     height: 75%;
 }
 
-.navbar__title {
-    padding-left: 10px;
-    background-color: inherit;
-}
-
 /* Services Navbar */
 .services-navbar {
     display: flex;
@@ -54,12 +48,13 @@
     justify-content: space-around;
 }
 
-.services-navbar_item {
+.services-navbar__item {
     font-size: 20px;
     background-color: inherit;
     color: white;
 }
 
+/* Welcome Box */
 .welcome-box {
     margin: auto;
     margin-top: 10vh;
@@ -92,72 +87,65 @@
     justify-content: space-between;
 }
 
-.section--half {
-    width: 50%;
+.section--inline {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.section__content {
-    color: black;
-    display: block;
+.section__left {
+    width: 50vw;
+}
+
+.section__right {
+    width: 50vw;
 }
 
 .section__title {
+    padding: 0 10px;
     font-size: 2em;
+    text-align: center;
 }
 
 .section__text {
+    color: black;
     font-size: 1.5em;
     padding: 10px;
 }
 
 .section__text--narrow {
-    padding: 10px;
-    font-size: 1.5em;
     padding-left: 15%;
     padding-right: 15%;
 }
 
-.section__content--center {
-    text-align: center;
-}
-
-.section__content--left {
-    text-align: left;
-}
-
-.section__img {
-    width: 50%;
+/* Images */
+.img {
+    width: 100%;
 }
 
 /* Buttons */
 .button {
     display: block;
     border: none;
-}
-
-.button--center {
     text-align: center;
     margin: 5% auto;
-}
-
-.button--medium {
-    font-size: 1.5em;
     font-weight: bolder;
     box-shadow: 0;
     border-radius: 5px;
-    width: 200px;
 }
 
 .button--large {
     font-size: 2em;
-    font-weight: bolder;
-    box-shadow: 0;
-    border-radius: 5px;
     width: 400px;
 }
 
-.button--inline {
-    display: inline;
+.button--medium {
+    font-size: 1.5em;
+    width: 200px;
+}
+
+.button--small {
+    font-size: 1em;
+    width: 100px;
 }
 
 .button--blue {
@@ -168,59 +156,4 @@
 .button--red {
     color: white;
     background-color: red;
-}
-
-/* Cards */
-.card {
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.card--center {
-    margin: 50px auto;
-}
-
-.card--large {
-    width: 50vw;
-    height: auto;
-}
-
-.card--medium {
-    width: 25vw;
-    height: auto;
-}
-
-.card__form {
-    width: 100%;
-}
-
-.card__title {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 1.5em;
-}
-
-.card__text {
-    font-size: 1.25em;
-}
-
-.card__input--text {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 0.5px solid lightgray;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-
-.card__input--checkbox {
-    display: inline;
-}
-
-.card__input--select {
-    display: block;
-    border: 0.5px solid lightgray;
-    border-radius: 5px;
 }
