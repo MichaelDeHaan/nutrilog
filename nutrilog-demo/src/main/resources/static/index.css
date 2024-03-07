@@ -92,12 +92,8 @@
     flex-wrap: wrap;
 }
 
-.section__left {
-    width: 50vw;
-}
-
-.section__right {
-    width: 50vw;
+.section__half {
+    width: 100%;
 }
 
 .section__title {
@@ -127,7 +123,7 @@
     display: block;
     border: none;
     text-align: center;
-    margin: 5% auto;
+    margin: 2.5% auto;
     font-weight: bolder;
     box-shadow: 0;
     border-radius: 5px;

@@ -1,31 +1,32 @@
+* {
+    /* outline: solid black 1px; */
+}
+
 /* Cards Container*/
 .card-container {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 10px;
-    padding: 0 10px;
+    gap: 10px;
 }
 
 .card-container--center {
     justify-content: center;
 }
 
+.card-container--space {
+    margin: 10px;
+}
+
+.card-container--space--extra {
+    margin: auto;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+
 /* Cards */
 .card {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.card--border {
-    border: .5px solid;
-}
-
-.card--center {
-    margin: 50px auto;
-}
-
-.card--space {
-    padding: 10px;
 }
 
 .card--large {
@@ -47,13 +48,22 @@
 }
 
 /* Card Content */
-.card__title {
+.card__content--background--green {
+    color: black;
+    background-color: rgb(0, 255, 0);
+}
+
+.card__content--background--red {
+    background-color: red;
+}
+
+.card__content--tile {
     text-align: center;
     margin-bottom: 20px;
     font-size: 1.5em;
 }
 
-.card__text {
+.card__content--text {
     padding-left: 5px;
     padding-right: 5px;
     width: fit-content;
@@ -61,16 +71,11 @@
     border-radius: 5px;
 }
 
-.card__text--background--green {
-    color: black;
-    background-color: rgb(0, 255, 0);
+.card__content--form {
+    width: 100%;
 }
 
-.card__text--background--red {
-    background-color: red;
-}
-
-.card__input--text {
+.card__content--input--text {
     display: block;
     width: 100%;
     padding: 10px;
@@ -80,16 +85,12 @@
     box-sizing: border-box;
 }
 
-.card__input--checkbox {
+.card__content--input--checkbox {
     display: inline;
 }
 
-.card__input--select {
+.card__content--input--select {
     display: block;
     border: 0.5px solid lightgray;
     border-radius: 5px;
-}
-
-.card__form {
-    width: 100%;
 }

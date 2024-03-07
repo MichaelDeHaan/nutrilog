@@ -5,8 +5,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class WebController {
+
+    //Does not currently work
     @GetMapping("/")
     public String showPage() {
-        return "index";
+        return "test";
     }
 }

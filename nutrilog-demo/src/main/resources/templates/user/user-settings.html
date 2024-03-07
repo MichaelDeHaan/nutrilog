@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Personal Settings - NutriLog</title>
+    <link rel="stylesheet" href="../../static/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <a class="navbar__item" href="../index.html">
+            <img class="navbar__icon" src="../../static/images/icon.png" alt="Fork, knife, and plate icon">
+            <span class="navbar__item">NutriLog</span>
+        </a>
+        <a class="navbar__item" href="login.html">Login</a>
+    </nav>
+
+    <nav class="services-navbar" id="services-bar">
+        <a class="services-navbar__item" href="../user.html">Homepage</a>
+        <a class="services-navbar__item" href="../user/contact-nutritionist.html">Contact Nutritionist</a>
+        <a class="services-navbar__item" href="../user/user-food-save.html">Your Foods</a>
+        <a class="services-navbar__item" href="../user/user-settings.html">Settings</a>
+    </nav>
+
+    <section class="card-container card-container--center card-container--space--extra">
+        <section class="card card--large">
+            <h2 class="card__content--tile">Manage Personal Settings</h2>
+            <form class="card__form">
+                <input class="card__content--input--text" type="text" id="name" placeholder="Enter Your New Name"
+                    required>
+                <input class="card__content--input--text" type="text" id="allergies"
+                    placeholder="Enter Food Allergies (comma separated)">
+                <input class="card__content--input--text" type="number" id="age" placeholder="Enter Your Age" required>
+
+                <div>
+                    <input class="card__content--input--checkbox" type="checkbox" name="diabetes">
+                    <label class="card__content--input--checkbox" for="diabetes">Diabetes</label>
+                </div>
+                <div>
+                    <input class="card__content--input--checkbox" type="checkbox" name="high-blood-sugar">
+                    <label class="card__content--input--checkbox" for="high-blood-sugar">High Blood Sugar</label>
+                </div>
+                <div>
+                    <input class="card__content--input--checkbox" type="checkbox" name="low-vitamin-counts">
+                    <label class="card__content--input--checkbox" for="low-vitamin-counts">Low Vitamin Counts</label>
+                </div>
+                <button class="button button--medium button--center button--red" type="submit">Delete Account</button>
+                <button class="button button--medium button--center button--blue" type="submit">Save Changes</button>
+            </form>
+        </section>
+    </section>
+</body>
+
+</html>
