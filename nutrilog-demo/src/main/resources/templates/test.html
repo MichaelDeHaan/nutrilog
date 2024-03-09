@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <meta charset="UTF-8">
@@ -20,5 +20,8 @@
         <a class="navbar__item" href="login.html">Login</a>
     </nav>
 </body>
+<h1>Food Ingredients</h1>
+<p th:text="${ingredients}">Default Text</p>
+
 
 </html>

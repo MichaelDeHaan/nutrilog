@@ -1,48 +1,60 @@
-package com.csc340.nutrilogdemo;
+package com.csc340.nutrilogdemo.food;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.client.RestTemplate;
+@Service
+public class FoodService {
+    private static final String apiKey = "ndFnGHpfbnvo2eG1BhcUKEJOoqWu7yWe2PVJzTvW";
 
-@SpringBootApplication
-public class ApiController {
-    public static void getFoodInfo() {
+    public void updateIngredients(Food food) {
+        JsonNode foodDetails = search();
+        JsonNode ingredients = foodDetails.get("ingredients");
+        System.out.println(ingredients);
+        food.setIngredients(ingredients.toString());
+
+    }
+
+    private String getInput() {
         Scanner sc = new Scanner(System.in);
         System.out.println("*********Input*********");
         System.out.print("Enter a food item: ");
         String input = sc.nextLine();
+        return input;
+    }
 
-        String apiKey = "ndFnGHpfbnvo2eG1BhcUKEJOoqWu7yWe2PVJzTvW";
-
+    /**
+     * Returns the first occurance of a food Item
+     *
+     * @return The first food object as a JsonNode
+     */
+    private JsonNode search() {
+        String input = getInput();
+        JsonNode returnNode;
         try {
             String url = "https://api.nal.usda.gov/fdc/v1/foods/search?api_key=" + apiKey + "&query=" + input;
-            // Used to consume the API
             RestTemplate restTemplate = new RestTemplate();
-            // Used to parse the JSON to/from Java objects
-            // First step to use JsonNode
             ObjectMapper mapper = new ObjectMapper();
 
-            // Sends the request and gets the result as a string
             String jsonInfo = restTemplate.getForObject(url, String.class);
-            // Turns the json into a tree for some reason
             JsonNode array = mapper.readTree(jsonInfo);
 
             //TODO: Error checking
             JsonNode foods = array.get("foods");
-            JsonNode firstFoodItem = foods.get(0);
-            JsonNode ingredients = firstFoodItem.get("ingredients");
-            System.out.println(ingredients);
+            returnNode = foods.get(0);
+            return returnNode;
 
         } catch (JsonProcessingException ex) {
-            Logger.getLogger(NutrilogDemoApplication.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(FoodController.class.getName()).log(Level.SEVERE, null, ex);
             System.out.println("error in getFoodInfo");
+            return null;
         }
     }
 }

@@ -8,7 +8,6 @@ public class NutrilogDemoApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(NutrilogDemoApplication.class, args);
-		ApiController.getFoodInfo();
 	}
 }
 
