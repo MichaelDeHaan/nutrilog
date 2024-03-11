@@ -12,55 +12,30 @@
 </head>
 
 <body>
-    <nav id="navbar">
-        <a class="nav-item" href="./index.html">
-            <img id="icon" src="../static/images/icon.png" alt="Fork, knife, and plate icon">
-            <span>NutriLog</span>
+    <nav class="navbar">
+        <a class="navbar__item" href="./index.html">
+            <img class="navbar__icon" src="../static/images/icon.png" alt="Fork, knife, and plate icon">
+            <span class="navbar__item">NutriLog</span>
         </a>
-        <!-- TODO: Combine with button styles -->
-        <a id="login-button" class="nav-item" href="login.html">Login</a>
+        <a class="navbar__item" href="login.html">Login</a>
     </nav>
 
-    <main id="login-container">
-        <h2>Login to NutriLog</h2>
-        <form id="login-form">
-            <input type="email" id="email" name="email" placeholder="Email" required>
-            <input type="password" id="password" name="password" placeholder="Password" required>
-            <button type="submit">Login</button>
-        </form>
-        <p>Don't have an account? <a href="./signup.html">Sign up</a></p>
+    <main class="card-container card-container--center card-container--space--extra">
+        <section class="card">
+            <form class="card card--small" action="">
+                <label for="username">Username</label>
+                <input class="card__content--input--text" type="text" id="username" name="username">
+                <label for="password">Password</label>
+                <!-- TODO: Implement -->
+                <span>
+                    <a class="anchor--color--reset" href="">Forgot passoword?</a>
+                    <input class="card__content--input--text" type="password" id="password" name="password">
+                </span>
+                <input class="button button--blue button--medium" type="submit" value="Login">
+            </form>
+            <p>Don't have an account? <a class="anchor--color--reset" href="./signup.html">Sign up</a></p>
+        </section>
     </main>
-
-    <!-- <script>
-        document.getElementById("login-form").addEventListener("submit", function (event) {
-            event.preventDefault(); // Prevent the default form submission
-
-            // Get the email and password values and trim any leading/trailing spaces
-            var email = document.getElementById("email").value.trim();
-            var password = document.getElementById("password").value.trim();
-
-            console.log("Entered email:", email); // Debug statement
-            console.log("Entered password:", password); // Debug statement
-
-            // Check if the email and password match a certain account
-            if (email.toLowerCase() === "user@prototype.com" && password === "user") {
-                // Redirect to the user page
-                console.log("Redirecting to user page..."); // Debug statement
-                window.location.href = './user.html';
-            } else if (email.toLowerCase() === "specialist@prototype.com" && password === "specialist") {
-                // Redirect to the specialist page
-                console.log("Redirecting to specialist page..."); // Debug statement
-                window.location.href = './specialist.html';
-            } else if (email.toLowerCase() === "admin@prototype.com" && password === "admin") {
-                // Redirect to the admin page
-                console.log("Redirecting to admin page..."); // Debug statement
-                window.location.href = './admin.html';
-            } else {
-                // Display an error message (you can customize this part)
-                alert('Invalid email or password. Please try again.');
-            }
-        });
-    </script> -->
 
 </body>
 

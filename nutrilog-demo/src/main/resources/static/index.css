@@ -153,3 +153,8 @@
     color: white;
     background-color: red;
 }
+
+/* Anchors */
+.anchor--color--reset {
+    color: blue;
+}
