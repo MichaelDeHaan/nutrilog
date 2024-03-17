@@ -14,12 +14,35 @@ import java.util.logging.Logger;
 public class FoodService {
     private static final String apiKey = "ndFnGHpfbnvo2eG1BhcUKEJOoqWu7yWe2PVJzTvW";
 
-    public void updateIngredients(Food food) {
+    public void updateFood(Food food) {
         JsonNode foodDetails = search();
         JsonNode ingredients = foodDetails.get("ingredients");
-        System.out.println(ingredients);
         food.setIngredients(ingredients.toString());
-
+        JsonNode nutrients = foodDetails.get("foodNutrients");
+        JsonNode proteinContent = null;
+        JsonNode fatContent = null;
+        JsonNode carbContent = null;
+        for (JsonNode nutrient : nutrients){
+            String nutrientName = nutrient.get("nutrientName").asText();
+            if (nutrientName.equals("Protein")){
+                proteinContent = nutrient.get("value");
+            }
+            if (nutrientName.equals("Total lipid (fat)")){
+                fatContent = nutrient.get("value");
+            }
+            if (nutrientName.equals("Carbohydrate, by difference")){
+                carbContent = nutrient.get("value");
+            }
+        }
+        if (proteinContent != null) {
+            food.setProteinContent(proteinContent.asText());
+        }
+        if (fatContent != null) {
+            food.setFatContent(fatContent.asText());
+        }
+        if (carbContent != null) {
+            food.setCarbContent(carbContent.asText());
+        }
     }
 
     private String getInput() {

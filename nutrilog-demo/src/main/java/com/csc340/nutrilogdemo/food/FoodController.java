@@ -18,10 +18,12 @@ public class FoodController {
 
     @GetMapping("/")
     public String showPage(Model model) {
-        Food food = new Food();
-        foodService.updateIngredients(food);
-        String ingredients = food.getIngredients();
-        model.addAttribute("ingredients", ingredients);
+        Food food = new Food(foodService);
+        foodService.updateFood(food);
+        model.addAttribute("ingredients", food.getIngredients());
+        model.addAttribute("protein", food.getProteinContent());
+        model.addAttribute("fat", food.getFatContent());
+        model.addAttribute("carb", food.getCarbContent());
         return "test";
     }
 }
