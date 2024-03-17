@@ -13,7 +13,7 @@ import java.util.logging.Logger;
 @Service
 public class FoodService {
     private static final String apiKey = "ndFnGHpfbnvo2eG1BhcUKEJOoqWu7yWe2PVJzTvW";
-
+    private static final String secondAPIKey = "yCTWYwVF2hHfhgkItFebnhOYILMQg5MI3KBlss6p";
     public void updateFood(Food food) {
         JsonNode foodDetails = search();
         JsonNode ingredients = foodDetails.get("ingredients");
@@ -62,7 +62,7 @@ public class FoodService {
         String input = getInput();
         JsonNode returnNode;
         try {
-            String url = "https://api.nal.usda.gov/fdc/v1/foods/search?api_key=" + apiKey + "&query=" + input;
+            String url = "https://api.nal.usda.gov/fdc/v1/foods/search?api_key=" + secondAPIKey + "&query=" + input;
             RestTemplate restTemplate = new RestTemplate();
             ObjectMapper mapper = new ObjectMapper();
 
