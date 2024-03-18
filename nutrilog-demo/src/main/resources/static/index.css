@@ -98,13 +98,13 @@
 
 .section__title {
     padding: 0 10px;
-    font-size: 2em;
+    font-size: var(--font-size--desktop--large);
     text-align: center;
 }
 
 .section__text {
     color: black;
-    font-size: 1.5em;
+    font-size: var(--font-size--desktop);
     padding: 10px;
 }
 
@@ -130,17 +130,17 @@
 }
 
 .button--large {
-    font-size: 2em;
+    font-size: var(--font-size--desktop--large);
     width: 400px;
 }
 
 .button--medium {
-    font-size: 1.5em;
+    font-size: var(--font-size--desktop);
     width: 200px;
 }
 
 .button--small {
-    font-size: 1em;
+    font-size: var(--font-size--desktop--small);
     width: 100px;
 }
 
@@ -157,4 +157,10 @@
 /* Anchors */
 .anchor--color--reset {
     color: blue;
+}
+
+:root {
+    --font-size--desktop: 20px;
+    --font-size--desktop--large: 30px;
+    --font-size--desktop--small: 15px;
 }
