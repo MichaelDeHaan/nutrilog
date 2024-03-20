@@ -28,15 +28,21 @@
         <a class="services-navbar__item" href="../nutritionist/nutritionist-settings.html">Settings</a>
     </nav>
 
-    <section class="section">
-        <section class="card card--center card--medium">
+    <section class="card-container card-container--center card-container--space--extra"">
+        <section class="card card--large">
             <h2 class="card__title">Manage Personal Settings</h2>
             <form class="card__form">
-                <input class="card__input--text" type="text" id="name" placeholder="Enter Your New Name" required>
-                <input class="card__input--text" type="text" id="allergies"
+                <input class="card__content--input--text" type="text" id="name" placeholder="Enter Your New Name" required>
+                <input class="card__content--input--text" type="text" id="allergies"
                     placeholder="Enter Food Allergies (comma separated)">
-                <input class="card__input--text" type="number" id="age" placeholder="Enter Your Age" required>
-
+                <input class="card__content--input--text" type="number" id="age" placeholder="Enter Your Age" required>
+                <input class="card__content--input--text" type="number" id="height" placeholder="Enter Your Height in inches" required>
+                <input class="card__content--input--text" type="number" id="weight" placeholder="Enter Your Weight in pounds" required>
+                <label for="sex">Select Your Sex:</label>
+            <select id="sex" name="sex">
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+            </select>
                 <div>
                     <input class="card__input--checkbox" type="checkbox" name="diabetes">
                     <label class="card__input--checkbox" for="diabetes">Diabetes</label>
