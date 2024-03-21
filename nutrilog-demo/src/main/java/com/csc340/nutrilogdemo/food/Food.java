@@ -3,11 +3,11 @@ package com.csc340.nutrilogdemo.food;
 public class Food {
     String name;
     String ingredients;
-    String fatContent;
-    String carbContent;
-    String proteinContent;
+    String fat;
+    String carb;
+    String protein;
 
-    public Food(FoodService foodService) {
+    public Food() {
 
     }
 
@@ -27,27 +27,27 @@ public class Food {
         this.ingredients = ingredients;
     }
 
-    public String getFatContent() {
-        return fatContent;
+    public String getFat() {
+        return fat;
     }
 
-    public void setFatContent(String fatContent) {
-        this.fatContent = fatContent;
+    public void setFat(String fat) {
+        this.fat = fat;
     }
 
-    public String getCarbContent() {
-        return carbContent;
+    public String getCarb() {
+        return carb;
     }
 
-    public void setCarbContent(String carbContent) {
-        this.carbContent = carbContent;
+    public void setCarb(String carb) {
+        this.carb = carb;
     }
 
-    public String getProteinContent() {
-        return proteinContent;
+    public String getProtein() {
+        return protein;
     }
 
-    public void setProteinContent(String proteinContent) {
-        this.proteinContent = proteinContent;
+    public void setProtein(String protein) {
+        this.protein = protein;
     }
 }

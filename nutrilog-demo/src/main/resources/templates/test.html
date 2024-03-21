@@ -19,16 +19,12 @@
         </a>
         <a class="navbar__item" href="login.html">Login</a>
     </nav>
-</body>
-<h1>Food Information</h1>
-<h2>Ingredients</h2>
-<p th:text="${ingredients}">Default Text</p>
-<h2>Protein</h2>
-<p th:text="${protein}">Default Text</p>
-<h2>Fat</h2>
-<p th:text="${fat}">Default Text</p>
-<h2>Carbs</h2>
-<p th:text="${carb}">Default Text</p>
 
+    <h1>Enter Food Name</h1>
+    <form action="#" th:action="@{/}" th:object="${food}" method="post">
+        <p>Food Name: <input type="text" th:field="*{name}" /></p>
+        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+    </form>
+</body>
 
 </html>
