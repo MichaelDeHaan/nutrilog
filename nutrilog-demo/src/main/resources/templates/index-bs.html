@@ -17,7 +17,9 @@
         <img class="navbar__icon" src="../static/images/icon.png" width="30" height="30" alt="logo">
         <span class="navbar__item">NutriLog</span>
       </a>
-      <a class="nav-link" href="login.html">Login</a>
+      <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#loginModal">
+        Login
+      </button>
     </div>
   </nav>
 
@@ -28,7 +30,9 @@
           <h1 class="fs-2">Experience Smart Nutrition</h1>
           <p class="fs-4">Track your food and build healthier habits with the all-in-one smart food tracking app.</p>
           <div class="text-center">
-            <a class="btn btn-primary" href="signup.html">Start Today</a>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signUpModal">
+              Start Today
+            </button>
           </div>
         </div>
         <div class="col">
@@ -51,8 +55,66 @@
 
     <div class="container-fluid">
       <a class="btn btn-secondary" href="./admin.html">Admin</a>
-      <a class="btn btn-secondary" href="./user.html">User</a>
+      <a class="btn btn-secondary" href="./user-bs.html">User</a>
       <a class="btn btn-secondary" href="./nutritionist.html">Nutritionist</a>
+    </div>
+
+    <!-- Login -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="loginModalLabel">Login</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <label for="inputUsername" class="form-label">Username</label>
+            <input type="text" id="inputUsername" class="form-control" placeholder="username">
+            <label for="inputPassword" class="form-label">Password</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="password">
+            <div class="d-grid gap-2 col-6 mx-auto pt-4">
+              <button type="button" class="btn btn-primary">Login</button>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <p class="text-start">Don't have an account?
+              <button type="button" class="btn btn-link align-baseline p-0 " data-bs-toggle="modal"
+                data-bs-target="#signUpModal">
+                Sign up
+              </button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sign-up -->
+    <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="signUpModalLabel">Sign up</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <label for="inputUsername" class="form-label">Username</label>
+            <input type="text" id="inputUsername" class="form-control" placeholder="username">
+            <label for="inputPassword" class="form-label">Password</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="password">
+            <div class="d-grid gap-2 col-6 mx-auto pt-4">
+              <button type="button" class="btn btn-primary">Sign up</button>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <p class="text-start">Already hava an account?
+              <button type="button" class="btn btn-link align-baseline p-0" data-bs-toggle="modal"
+                data-bs-target="#loginModal">
+                Login
+              </button>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
