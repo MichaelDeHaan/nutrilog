@@ -10,14 +10,7 @@ public class User {
     private double weight;
     private char sex;
 
-    public User(int id, String name, String email, int age, double height, double weight, char sex){
-        this.id = id;
-        this.name = name;
-        this.email = email;
-        this.age = age;
-        this.height = height;
-        this.weight = weight;
-        this.sex = sex;
+    public User(){
     }
 
     public int getId() {
