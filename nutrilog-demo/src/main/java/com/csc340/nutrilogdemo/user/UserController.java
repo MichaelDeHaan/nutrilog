@@ -10,9 +10,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 public class UserController {
-    @GetMapping("/user-bs.html")
+
+    @GetMapping("/user.html")
     public String showUserPage(Model model) {
-        return "user-bs";
+        return "user";
     }
 
     @GetMapping("/templates/user/u-search.html")
@@ -26,6 +27,6 @@ public class UserController {
     public String searchSubmit(@ModelAttribute Food food, Model model){
         new FoodService().findMacros(food);
         model.addAttribute("food",food);
-        return "result";
+        return "/user/u-result";
     }
 }

@@ -64,8 +64,6 @@ public class FoodService {
             return returnNode;
 
         } catch (JsonProcessingException ex) {
-            Logger.getLogger(FoodController.class.getName()).log(Level.SEVERE, null, ex);
-            System.out.println("error in getFoodInfo");
             return null;
         }
     }
