@@ -2,6 +2,7 @@ package com.csc340.nutrilogdemo.user;
 
 import com.csc340.nutrilogdemo.food.Food;
 import com.csc340.nutrilogdemo.food.FoodService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,6 +11,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 public class UserController {
+
+    @Autowired
+    public UserRepository userRepository;
 
     @GetMapping("/user.html")
     public String showUserPage(Model model) {
