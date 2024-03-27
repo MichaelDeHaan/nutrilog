@@ -76,6 +76,25 @@
             </a>
         </div>
 
+        <form action="#" th:action="@{user.html}" th:object="${user}" method="post">
+            <div class="mb-3">
+                <label for="userId" class="form-label">User ID</label>
+                <input type="text" th:field="*{id}" class="form-control" id="userId">
+
+                <label for="userName" class="form-label">Name</label>
+                <input type="text" th:field="*{name}" class="form-control" id="userName">
+
+                <input type="submit" value="Submit" class="btn btn-primary my-4">
+            </div>
+        </form>
+
+        <!-- <form action="#" th:action="@{/templates/user/u-search.html}" th:object="${food}" method="post">
+            <div class="mb-3">
+                <label for="foodSearch" class="search-label">Search for a food</label>
+                <input type="text" th:field="*{name}" class="form-control" id="foodSearch">
+            </div>
+        </form> -->
+
 
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

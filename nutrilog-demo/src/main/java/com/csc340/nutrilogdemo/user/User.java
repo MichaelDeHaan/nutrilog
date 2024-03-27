@@ -10,7 +10,8 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+//    TODO: Make id a int
+    private Integer id;
     private String name;
     private String email;
     private String password;
@@ -22,11 +23,11 @@ public class User {
     public User(){
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id){
+    public void setId(Integer id){
         this.id = id;
     }
 
