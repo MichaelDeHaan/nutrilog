@@ -10,7 +10,6 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-//    TODO: Make id a int
     private Integer id;
     private String name;
     private String email;

@@ -13,6 +13,7 @@ public class UserController {
     @Autowired
     public UserRepository userRepository;
 
+    // Display user homepage
     @GetMapping("/user.html")
     public String showUserPage(Model model) {
         User user = new User();
@@ -20,6 +21,7 @@ public class UserController {
         return "user";
     }
 
+    // Display user search
     @GetMapping("/templates/user/u-search.html")
     public String showSearchPage(Model model) {
         Food food = new Food();
@@ -27,22 +29,23 @@ public class UserController {
         return "/user/u-search";
     }
 
+    // Get search requests
     @PostMapping("/templates/user/u-search.html")
-    public String searchSubmit(@ModelAttribute Food food, Model model){
+    public String searchSubmit(@ModelAttribute Food food, Model model) {
         new FoodService().findMacros(food);
-        model.addAttribute("food",food);
+        model.addAttribute("food", food);
         return "/user/u-result";
     }
 
-//    SQL
-    @PostMapping(path="/user.html")
-    public String addNewUser(@ModelAttribute User user, Model model){
+    // SQL, get new user requests
+    @PostMapping(path = "/user.html")
+    public String addNewUser(@ModelAttribute User user, Model model) {
         model.addAttribute("user", user);
         userRepository.save(user);
         return "redirect:/all";
     }
 
-    @GetMapping(path="/all")
+    @GetMapping(path = "/all")
     public @ResponseBody Iterable<User> getAllUsers() {
         // This returns a JSON or XML with the users
         return userRepository.findAll();
